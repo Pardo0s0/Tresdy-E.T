@@ -1,0 +1,116 @@
+
+#bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+header img , footer img{
+    width: 20vh;
+    margin-left: 5vh;
+}
+footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    color: white;
+}
+footer #info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;    
+}
+footer .seccionfooter{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2vh 0 2vh;
+}
+footer .seccionfooter h1{
+    font-size: 2vh;
+}
+footer .seccionfooter h2{
+    font-size: 2vh;
+}
+footer .seccionfooter1 {
+    margin-right: 5vh;
+}
+footer .seccionfooter .redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+footer .seccionfooter .redes img{
+    width: 4vh;
+    margin: 0;
+}
+
+
+
+.wmenu {
+
+    margin-right: 5vh;
+    font-size: 2vh;
+}
+
+.wmenu  a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+    margin-right: 15px;
+    
+}
+.wmenu  a:hover {
+    color: black;
+    border-radius: 15px;
+    background: rgb(189, 174, 42);
+    padding: 1vh;
+}
+
+.menu-btn {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    padding-right: 1vh;
+}
+
+@media screen and (max-width:1150px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .wmenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        background: rgb(121, 121, 121);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        transform: translateX(-100%);
+    }
+
+    .wmenu li {
+        margin: 15px 0;
+    }
+
+    .wmenu.active {
+        transform: translateX(0%);
+    }
+}

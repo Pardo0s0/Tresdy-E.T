@@ -1,0 +1,15 @@
+{% extends 'core/hf.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block contenido %}
+<div id="registro">
+    <h5>Registrarse</h5>
+<form action="" method="post">
+    {% csrf_token %}
+    {{form|crispy}}
+    <br>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+</div>
+{{mensaje}}
+{% endblock %}

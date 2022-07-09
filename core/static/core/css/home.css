@@ -1,0 +1,123 @@
+#tabla, #crud1, #registro,#login,#logout,#prueba{
+    background-color: white;
+    padding: 2cm;
+    border-radius: 15px;
+    width: 100%;
+    color: black;
+    border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  margin: 2cm;
+}
+#tabla a{
+    text-decoration: none;
+    color: black;
+}
+#carrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 2cm;
+  padding-bottom: 2cm;
+}
+#carrusel2 {
+  width: 60%;
+}
+#infoh h1 {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+}
+#infoh {
+  padding-top: 1cm;
+  padding-bottom: 1cm;
+}
+#infomarcash {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1cm;
+  padding-bottom: 1cm;
+}
+.carta{
+  width: 50%;
+  padding-right: 1cm;
+}
+.carta1{
+  text-align: center;
+  width: 18rem;
+}
+.card-body{
+  background-color: white;
+}
+#sobrenosotros {
+  padding-left: 1cm;
+  padding-right: 1cm;
+  padding-bottom: 1cm;
+  background-color: white;
+  margin-bottom: 2cm;
+}
+
+#sobrenosotros p {
+  text-align: justify;
+  
+}
+
+#sobrenosotros h1 {
+  text-align: center;
+  padding-bottom: 0.5cm;
+}
+#Contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1cm;
+  background-color: white;
+  margin-bottom: 1cm;
+}
+
+#contactocontenido {
+  display: flex;
+  justify-content: space-between;
+}
+
+#infodirection {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1cm;
+  padding-left: 1cm;
+  padding-right: 1cm;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+#linea1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5cm;
+}
+
+#linea1>#nombre {
+  padding-right: 0.5cm;
+}
+
+#linea1>#email {
+  padding-left: 0.5cm;
+}
+
+#linea2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#boton {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5cm;
+}

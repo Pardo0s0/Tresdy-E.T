@@ -1,0 +1,10 @@
+{% extends 'core/hf.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block contenido %}
+<div id="logout">
+<h5>Has cerrado sesión</h5>
+<br>
+<a href="{% url 'home' %}">Volver</a>
+</div>
+{% endblock %}

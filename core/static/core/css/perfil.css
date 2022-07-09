@@ -1,0 +1,33 @@
+#cuadro-perfil {
+  margin: 1cm;
+    padding-top: 1cm;
+  background-color: white;
+}
+
+#info-perfil {
+  display: flex;
+  justify-content: center;
+  padding: 12px 10% 12px 10%;
+  padding-top: 1cm;
+  background-color: white;
+  padding-bottom: 2cm;
+}
+
+#imagen-perfil {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding-top: 1cm;
+}
+
+#switch {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+#titulosub {
+  display: flex;
+  justify-content: center;
+}

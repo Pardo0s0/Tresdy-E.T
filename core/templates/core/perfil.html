@@ -1,0 +1,365 @@
+{% extends 'core/hf.html' %}
+{% load static %}
+{% block contenido %}
+<script src="{% static 'core/js/perfil.js' %}"></script>
+<div id="cuadro-perfil">
+
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Cuenta</h2>
+
+
+    <div id="imagen-perfil">
+        <img src="{% static 'core/img/perfil.jpg' %}" width="250px" alt="">
+    </div>
+    <div id="info-perfil">
+
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Nombre de Usuario</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="William@gmail.com">
+        
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="ChaparrasA1000">
+                <h4 id="mensajecontra3"></h4>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Guacolda 905">
+                <h4 id="mensajedirec"></h4>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Datos adicionales(Opcional)</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Casita Humilde">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Melipilla">
+                <h4 id="mensajeCiudad"></h4>
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Comuna</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Comuna Obligatoria</option>
+                    <option> Alto El Loa
+                    <option>Antofagasta
+                    <option>Arica
+                    <option>Bahía Inglesa
+                    <option>Calama
+                    <option>Aldea de Tulor
+                    <option>Caspana
+                    <option>Cerro Toco
+                    <option>Chiu - Chiu
+                    <option>Copiapó
+                    <option>Géisers del Tatio
+                    <option>Guatín
+                    <option>Hierbas Buenas
+                    <option>Iquique
+                    <option>La Tirana
+                    <option>Laguna Cejar
+                    <option>Laguna Chaxa
+                    <option>Laguna Roja
+                    <option>Lagunas Altiplánicas (Miscanti y Miñiques)
+                    <option>Machuca
+                    <option>Monumento Natural Salar de Surire
+                    <option>Oficinas Salitreras Humberstone
+                    <option>Ojos del Salar y laguna Tebinquinche
+                    <option>Ollagüe
+                    <option>Parque Nacional Lauca
+                    <option>Parque Nacional Llanos de Challe
+                    <option>Parque Nacional Llullaillaco
+                    <option>Parque Nacional Nevado Tres Cruces
+                    <option>Parque Nacional Pan de Azúcar
+                    <option>Parque Nacional Salar de Huasco
+                    <option>Parque Nacional Volcán Isluga
+                    <option>Pukará de Lasana
+                    <option>Pukará de Quitor
+                    <option>Putre
+                    <option>Reserva Nacional Los Flamencos
+                    <option>Reserva Nacional Pampa del Tamarugal
+                    <option>Salar de Atacama
+                    <option>Salar de Tara
+                    <option>San Pedro de Atacama
+                    <option>Socaire
+                    <option>Termas de Mamiña
+                    <option>Termas de Puritama
+                    <option>Toconao
+                    <option>Valle de la Luna
+                    <option>Valle del Arcoiris
+                    <option>Volcán Láscar
+                    <option>Volcán Licancabur
+                    <option>Volcán Ojos del Salado
+                    <option>Volcán Sairecabur
+                    <option>Coquimbo
+                    <option>La Serena
+                    <option>Parque Nacional Bosques de Fray Jorge
+                    <option>Pisco Elqui
+                    <option>Reserva Nacional Pingüino de Humboldt
+                    <option>Termas de Socos
+                    <option>Tongoy
+                    <option>Valle del Elqui
+                    <option>Algarrobo
+                    <option>Alto del Naranjo
+                    <option>El Monte
+                    <option>Baños Colina
+                    <option>Cajón del Maipo
+                    <option>Curicó
+                    <option>El Colorado
+                    <option>Farellones
+                    <option>Isla Negra
+                    <option>Isla Robinson Crusoe
+                    <option>La Parva
+                    <option>Lago Colbún
+                    <option>Lago Rapel
+                    <option>Lago Vichuquén
+                    <option>Laguna Aculeo
+                    <option>Los Andes / Portillo
+                    <option>Mall Costanera Center
+                    <option>Monumento Natural El Morado
+                    <option>Monumento Natural Isla Cachagua
+                    <option>Museo de Colchagua
+                    <option>Olmué
+                    <option>Outlet Buenaventura
+                    <option>Parque Aguas de San Ramón
+                    <option>Parque Nacional La Campana
+                    <option>Parque Nacional Radal Siete Tazas
+                    <option>Pichilemu
+                    <option>Rancagua
+                    <option>Reserva Nacional Altos del Lircay
+                    <option>Reserva Nacional Laguna Torca
+                    <option>Reserva Nacional Río Clarillo
+                    <option>Reserva Nacional Río Los Cipreses
+                    <option>San Fernando
+                    <option>Santa Cruz
+                    <option>Santiago
+                    <option>Sewell
+                    <option>Ski en Santiago
+                    <option>Talca
+                    <option>Termas de Cauquenes
+                    <option>Termas de Panimávida
+                    <option>Termas de Quinamávida
+                    <option>Termas del Flaco
+                    <option>Valle de Almahue
+                    <option>Valle de Casablanca
+                    <option>Valle de Colchagua
+                    <option>Valle del Maipo
+                    <option>Valle Nevado
+                    <option>Valparaíso
+                    <option>Viña Casa Silva
+                    <option>Viña Concha y Toro
+                    <option>Viña del Mar
+                    <option>Viña Escondida
+                    <option>Viña Lapostolle
+                    <option>Viña Matetic
+                    <option>Viña Montes
+                    <option>Viña MontGras
+                    <option>Viña Santa Cruz
+                    <option>Viña Santa Rita
+                    <option>Viña Undurraga
+                    <option>Viña Vik
+                    <option>Viña Viu Manent
+                    <option>Volcán San José
+                    <option>Yerba Loca
+                    <option>Zapallar
+                    <option>Melipilla
+                    <option>San Antonio
+                    <option>Araucanía y Los Ríos
+                    <option>Backyard Pullao
+                    <option>Chillán
+                    <option>Cochamó
+                    <option>Concepción
+                    <option>Contulmo
+                    <option>Corralco
+                    <option>Crater Raihuen
+                    <option>Curacautín
+                    <option>El Cañi
+                    <option>Fiordo Quintupeu
+                    <option>Frutillar
+                    <option>Lago Budi
+                    <option>Lago Llanquihue
+                    <option>Lago Lleu Lleu
+                    <option>Lago Ranco
+                    <option>Lago Todos los Santos
+                    <option>Lonquimay
+                    <option>Los Ángeles
+                    <option>Monumento Natural Cerro Ñielol
+                    <option>Ojos del Caburgua
+                    <option>Osorno
+                    <option>Parque Nacional Alerce Andino
+                    <option>Parque Nacional Conguillío
+                    <option>Parque Nacional Huerquehue
+                    <option>Parque Nacional Laguna del Laja
+                    <option>Parque Nacional Nahuelbuta
+                    <option>Parque Nacional Puyehue
+                    <option>Parque Nacional Tolhuaca
+                    <option>Parque Nacional Vicente Perez Rosales
+                    <option>Parque Nacional Villarrica
+                    <option>Parque Tagua-Tagua
+                    <option>Peninsula de Rilán
+                    <option>Pucón
+                    <option>Puerto Montt
+                    <option>Puerto Octay
+                    <option>Puerto Varas
+                    <option>Quinquén
+                    <option>Reserva Biologica Huilo Huilo
+                    <option>Reserva Nacional Isla Mocha
+                    <option>Reserva Nacional Malalcahuello
+                    <option>Río Puelo
+                    <option>Río Trancura
+                    <option>Salto del Laja
+                    <option>Saltos de Petrohué
+                    <option>Santuario de la Naturaleza Carlos Anwandter
+                    <option>Ski en Antillanca
+                    <option>Ski en Chillán
+                    <option>Sollipulli
+                    <option>Temuco
+                    <option>Termas de Aguas Calientes
+                    <option>Termas de Chillán
+                    <option>Termas de Coñaripe
+                    <option>Termas de Huife
+                    <option>Termas de Liquiñe
+                    <option>Termas de Puyehue
+                    <option>Termas de Tolhuaca
+                    <option>Termas Geométricas
+                    <option>Totoral
+                    <option>Trekking al Salto del Puma Anticura
+                    <option>Valdivia
+                    <option>Villarrica
+                    <option>Volcán Osorno
+                    <option>Achao
+                    <option>Ancud
+                    <option>Castro
+                    <option>Dalcahue
+                    <option>Isla de Chiloé
+                    <option>Isla Mechuque
+                    <option>Parque Nacional Chiloé
+                    <option>Parque Tantauco
+                    <option>Puñihuil
+                    <option>Archipiélago Los Chonos
+                    <option>Auchemó
+                    <option>Bahía Tic Toc
+                    <option>Caleta Tortel
+                    <option>Capillas de Mármol
+                    <option>Carretera Austral
+                    <option>Carretera Austral Norte
+                    <option>Carretera Austral Sur
+                    <option>Centro de Ski El Fraile
+                    <option>Chaitén
+                    <option>Chile Chico
+                    <option>Cochrane
+                    <option>Coyhaique
+                    <option>Fiordo Piti Palena
+                    <option>Fiordo Quitralco
+                    <option>Futaleufú
+                    <option>Glaciar Exploradores
+                    <option>Glaciar O'Higgins
+                    <option>Isla de los Muertos
+                    <option>La Junta
+                    <option>Lago Elizalde
+                    <option>Lago General Carrera
+                    <option>Laguna Verde
+                    <option>Parque Aikén del Sur
+                    <option>Parque Nacional Hornopirén
+                    <option>Parque Nacional Laguna San Rafael
+                    <option>Parque Nacional Queulat
+                    <option>Parque Patagonia
+                    <option>Parque Pumalin
+                    <option>Puerto Aguirre
+                    <option>Puerto Bertrand
+                    <option>Puerto Chacabuco
+                    <option>Puerto Escondido
+                    <option>Puerto Guadal
+                    <option>Puerto Murta
+                    <option>Puyuhuapi
+                    <option>Reserva Nacional Cerro Castillo
+                    <option>Reserva Nacional Lago Jeinimeni
+                    <option>Reserva Nacional Rio Simpson
+                    <option>Reserva Nacional Tamango
+                    <option>Río Baker
+                    <option>Termas de Puyuhuapi
+                    <option>Termas del Amarillo
+                    <option>Villa O'Higgins
+                    <option>Antártica
+                    <option>Avenida de los Glaciares
+                    <option>Bahía Ainsworth
+                    <option>Bahía Wulaia
+                    <option>Cabo de Hornos
+                    <option>Camping Vértice Los Perros
+                    <option>Estancia Mercedes
+                    <option>Glaciar Amalia
+                    <option>Glaciar Bernal
+                    <option>Glaciar Grey
+                    <option>Glaciar Serrano y glaciar Balmaceda
+                    <option>Isla Magdalena
+                    <option>Isla Navarino
+                    <option>Lago Pehoé
+                    <option>Mirador Base Torres
+                    <option>Monumento Natural Cueva del Milodón
+                    <option>Parque Nacional Alberto de Agostini
+                    <option>Parque Nacional Pali Aike
+                    <option>Parque Nacional Torres del Paine
+                    <option>Porvenir
+                    <option>Puerto Natales
+                    <option>Puerto Williams
+                    <option>Punta Arenas
+                    <option>Refugio El Chileno
+                    <option>Refugio Vértice Dickson
+                    <option>Refugio Vértice Grey
+                    <option>Refugio Vértice Paine Grande
+                    <option>Reserva Nacional Magallanes
+                    <option>Sector Los Cuernos
+                    <option>Tierra del Fuego
+                    <option>Valle Francés
+                    <option>Ahu Akivi
+                    <option>Ahu Tahai
+                    <option>Aku Akahanga
+                    <option>Cerro El Yunque
+                    <option>Hanga OTeo
+                    <option>Hotu iti
+                    <option>Isla de Pascua
+                    <option>Mahatua
+                    <option>Maunga Terevaka
+                    <option>Mike Rapu - Buceo Isla de Pascua
+                    <option>Mirador Selkirk
+                    <option>Orongo
+                    <option>Ovahe
+                    <option>Parque Nacional Archipiélago Juan Fernández
+                    <option>Parque Nacional Rapa Nui
+                    <option>Playa Anakena
+                    <option>Poike
+                    <option>Poike
+                    <option>Pueblo San Juan Bautista
+                    <option>Puerto Inglés
+                    <option>Puna Pau
+                    <option>Rohoi
+                    <option>Tongariki
+                    <option>Volcán Rano Kau
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Codigo Postal</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="9520000">
+                <h4 id="mensajePostal"></h4>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-dark">Actualizar Informacion</button>
+            </div>
+        </form>
+    </div>
+    <div id="Subscribsion">
+        <div id="titulosub">
+            <h1>Subscribirse a fundacion ayuda animales</h1>
+        </div>
+        <div id="switch">
+            <h3>Noㅤ</h3>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            </div>
+            <h3>ㅤSi</h3>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
