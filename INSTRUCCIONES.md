@@ -1,6 +1,11 @@
 # Tresdy-E.T
 Examen transversal
 
+--BASE DE DATOS--
+  INSERTAR LA BASE DE DATOS EN SQL DEVELOPER
+
+
+
 1 - actualizar visual (menú HELP->CHECK FOR UPDATES)
 
 2 - descargar o abrir proyecto de ayer (base update en material extra)
